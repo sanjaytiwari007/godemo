@@ -11,7 +11,8 @@ var rootCmd = &cobra.Command{
 	Use:   "godemo",
 	Long:  "Add long description here. This is godemo for cli",
 	Short: "Add short description here",
-	Run:   func(cmd *cobra.Command, args []string) { fmt.Println("Hello CLI") },
+
+	Run: func(cmd *cobra.Command, args []string) { fmt.Println("Hello CLI") },
 }
 
 func Execute() {
