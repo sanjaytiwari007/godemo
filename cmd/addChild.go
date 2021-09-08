@@ -22,7 +22,7 @@ import (
 )
 
 // addCmd represents the add command
-var addChild = &cobra.Command{
+var addChildCmd = &cobra.Command{
 	Use:   "addchild",
 	Short: "A brief description of your command",
 	Long: `A longer description that spans multiple lines and likely contains examples
@@ -38,5 +38,5 @@ to quickly create a Cobra application.`,
 }
 
 func init() {
-	addCmd.AddCommand(addChild)
+	addCmd.AddCommand(addChildCmd)
 }

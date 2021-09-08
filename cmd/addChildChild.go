@@ -36,7 +36,7 @@ func addInt(args []string) {
 }
 
 // addCmd represents the add command
-var addChildChild = &cobra.Command{
+var addChildChildCmd = &cobra.Command{
 	Use:   "addchildchild",
 	Short: "A brief description of your command",
 	Long: `A longer description that spans multiple lines and likely contains examples
@@ -55,5 +55,5 @@ to quickly create a Cobra application.`,
 }
 
 func init() {
-	addChild.AddCommand(addChildChild)
+	addChildCmd.AddCommand(addChildChildCmd)
 }
